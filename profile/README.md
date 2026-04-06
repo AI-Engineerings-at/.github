@@ -1,32 +1,39 @@
+<div align="center">
+
 # AI Engineering
 
-**Lokale AI-Systeme fuer DACH-KMUs — DSGVO-konform, dokumentiert, auditierbar.**
+**Local AI systems for DACH SMBs. GDPR-compliant, documented, auditable.**
 
-Wir bauen und betreiben lokale AI-Infrastruktur. Keine Cloud-Abhaengigkeit, keine Daten aus der Hand geben.
+[Wiki](https://wiki.ai-engineering.at) · [Hub](https://hub.ai-engineering.at) · [Website](https://www.ai-engineering.at)
 
-## Projekte
+*Auch auf Deutsch verfuegbar — alle Projekte sind bilingual (DE + EN).*
 
-| Projekt | Beschreibung |
+</div>
+
+---
+
+We build and operate local AI infrastructure. No cloud dependency, no data leaving your hands.
+
+9 nodes, 3 GPUs, 37 workflows running in production. Everything self-hosted in Austria.
+
+## Open Source
+
+| Project | What it does |
 |---------|-------------|
-| [**Wiki**](https://wiki.ai-engineering.at) | 106+ Artikel zu lokaler KI, DSGVO, EU AI Act — kostenlos |
-| [**Hub**](https://hub.ai-engineering.at) | 900+ AI Skills und MCP Server — durchsuchbar, installierbar |
-| [**NSS**](https://github.com/AI-Engineering-at/nss) | 6-Layer Defensive Architecture fuer souveraene AI |
-| [**Homelab MCP**](https://github.com/AI-Engineering-at/homelab-mcp-bundle) | 8 MCP Server fuer self-hosted Infrastruktur |
-| [**TuneForge**](https://github.com/AI-Engineering-at/tuneforge) | Fine-Tuning Pipeline fuer lokale LLMs |
-| [**AI Agent Legal**](https://github.com/AI-Engineering-at/ai-agent-legal-framework) | EU AI Act + DSGVO Compliance Framework |
+| [**Wiki**](https://wiki.ai-engineering.at) | 106+ free articles on local AI, GDPR, EU AI Act |
+| [**Hub**](https://hub.ai-engineering.at) | 900+ AI skills and MCP servers — searchable, installable |
+| [**NSS**](https://github.com/AI-Engineering-at/nss) | 6-layer defensive architecture for sovereign AI |
+| [**Homelab MCP**](https://github.com/AI-Engineering-at/homelab-mcp-bundle) | 8 MCP servers for self-hosted infrastructure |
+| [**TuneForge**](https://github.com/AI-Engineering-at/tuneforge) | Fine-tuning pipeline for local LLMs |
+| [**Legal Framework**](https://github.com/AI-Engineering-at/ai-agent-legal-framework) | EU AI Act + GDPR compliance templates |
+| [**TurboQuant**](https://github.com/AI-Engineering-at/llama-cpp-turboquant-guide) | Run 122B models on consumer GPUs |
 
 ## Stack
 
 `Docker Swarm` · `Ollama` · `n8n` · `Grafana` · `PostgreSQL` · `Next.js` · `Claude Code` · `MCP`
 
-9 Nodes · 3 GPUs · 37 Workflows · 100% Self-Hosted in Oesterreich
+## About
 
-## Links
+Founded by Joerg Fuchs — mechatronics engineer, 13 Anthropic certifications, NVIDIA Developer. Based in Eisenstadt, Austria. Everything we ship comes from real operations, not theory.
 
-- [ai-engineering.at](https://www.ai-engineering.at) — Produkte und Schulungen
-- [hub.ai-engineering.at](https://hub.ai-engineering.at) — Skills und MCP Server Directory
-- [wiki.ai-engineering.at](https://wiki.ai-engineering.at) — Kostenloses Wissen
-
----
-
-*Made in Austria. Keine Marketing-Versprechen, nur was funktioniert.*
+kontakt@ai-engineering.at
