@@ -15,9 +15,10 @@ We build and operate local AI infrastructure. No cloud dependency, no data leavi
 | Surface | URL | Status |
 |---------|-----|--------|
 | **Hash-Chain-Verifier** | [verify.ai-engineering.at](https://verify.ai-engineering.at) | Ed25519 + Merkle, public read-only |
-| **Mattermost (operations chat)** | [mm.ai-engineering.at](https://mm.ai-engineering.at) | live (Bell-Labs-for-KMU operations layer) |
 | **Hub (skills + MCP-server search)** | [hub.ai-engineering.at](https://hub.ai-engineering.at) | 900+ entries |
-| **Webhooks (n8n)** | webhook.ai-engineering.at | 37 workflows |
+| **Wiki (free articles + EU AI Act)** | [wiki.ai-engineering.at](https://wiki.ai-engineering.at) | 106+ articles |
+
+*Internal operations (Mattermost, n8n-control, Grafana) sind NICHT public — Zugang nur via NetBird-VPN (10.40.100.0/24 Overlay, 5 Standorte).*
 
 ## Open Source
 
@@ -36,19 +37,13 @@ We build and operate local AI infrastructure. No cloud dependency, no data leavi
 
 **TurboQuant on Consumer Hardware** — First European team to benchmark TurboQuant (ICLR 2026) in a homelab. 100k tokens context on RTX 3090 with only 8.5% TPS loss. [Read the whitepaper](https://github.com/AI-Engineering-at/llama-cpp-turboquant-guide)
 
-## Curated Collection
-
-We test and maintain forks of the best open-source AI tools — integrated into our stack:
-
-`ATLAS` `HolyClaude` `AutoResearch` `oh-my-claudecode` `GoClaw` `adversarial-dev` `TurboQuant+` `UI-UX-Pro-Max`
-
 ## Stack
 
-`Docker Swarm` `Ollama` `n8n` `Grafana` `PostgreSQL` `Next.js` `Claude Code` `MCP`
+`Docker Swarm` `Ollama` `n8n` `Grafana` `PostgreSQL` `Next.js` `Claude Code` `MCP` `NetBird` (VPN-mesh für internal ops)
 
 ## About
 
-Founded by Joerg Fuchs — mechatronics engineer, **17 Anthropic certifications + ISC2 CC (Certified in Cybersecurity)**, NVIDIA Developer. ISC2-CC-Doktrin (CIA / AAA / Least-Privilege / Separation-of-Duties) operationalized in own infrastructure — see [DEC-050](https://github.com/AI-Engineering-at).
+Founded by Joerg Fuchs — mechatronics engineer, **17 Anthropic certifications + ISC2 CC (Certified in Cybersecurity)**, NVIDIA Developer. ISC2-CC-Doktrin (CIA / AAA / Least-Privilege / Separation-of-Duties) operationalized in own infrastructure.
 
 kontakt@ai-engineering.at — Eisenstadt, Austria
 
@@ -58,7 +53,6 @@ kontakt@ai-engineering.at — Eisenstadt, Austria
 - 📚 Wiki: [wiki.ai-engineering.at](https://wiki.ai-engineering.at)
 - 🧩 Hub: [hub.ai-engineering.at](https://hub.ai-engineering.at)
 - 🔐 Verify: [verify.ai-engineering.at](https://verify.ai-engineering.at)
-- 💬 MM: [mm.ai-engineering.at](https://mm.ai-engineering.at)
 - 🎬 YouTube: [@AI-Engineering-at](https://www.youtube.com/@AI-Engineering-at)
 - 💼 LinkedIn: [joerg-fuchs-ai](https://www.linkedin.com/in/joerg-fuchs-ai)
 - 👤 Maintainer: [@LEEI1337](https://github.com/LEEI1337)
