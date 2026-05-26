@@ -10,6 +10,15 @@ We build and operate local AI infrastructure. No cloud dependency, no data leavi
 
 *Alle Projekte sind bilingual (DE + EN) verfuegbar.*
 
+## Live Proof (Audit-Trail)
+
+| Surface | URL | Status |
+|---------|-----|--------|
+| **Hash-Chain-Verifier** | [verify.ai-engineering.at](https://verify.ai-engineering.at) | Ed25519 + Merkle, public read-only |
+| **Mattermost (operations chat)** | [mm.ai-engineering.at](https://mm.ai-engineering.at) | live (Bell-Labs-for-KMU operations layer) |
+| **Hub (skills + MCP-server search)** | [hub.ai-engineering.at](https://hub.ai-engineering.at) | 900+ entries |
+| **Webhooks (n8n)** | webhook.ai-engineering.at | 37 workflows |
+
 ## Open Source
 
 | Project | What it does |
@@ -21,6 +30,7 @@ We build and operate local AI infrastructure. No cloud dependency, no data leavi
 | [**TuneForge**](https://github.com/AI-Engineering-at/tuneforge) | Fine-tuning pipeline for local LLMs |
 | [**Legal Framework**](https://github.com/AI-Engineering-at/ai-agent-legal-framework) | EU AI Act + GDPR compliance templates |
 | [**TurboQuant**](https://github.com/AI-Engineering-at/llama-cpp-turboquant-guide) | 100k context on RTX 3090 with TurboQuant |
+| [**echo_log toolkit**](https://github.com/AI-Engineering-at/aie-echolog-toolkit) | Audit-trail + Hash-chain libraries (Merkle + Ed25519) |
 
 ## Research
 
@@ -38,7 +48,7 @@ We test and maintain forks of the best open-source AI tools — integrated into 
 
 ## About
 
-Founded by Joerg Fuchs — mechatronics engineer, 13 Anthropic certifications, NVIDIA Developer.
+Founded by Joerg Fuchs — mechatronics engineer, **17 Anthropic certifications + ISC2 CC (Certified in Cybersecurity)**, NVIDIA Developer. ISC2-CC-Doktrin (CIA / AAA / Least-Privilege / Separation-of-Duties) operationalized in own infrastructure — see [DEC-050](https://github.com/AI-Engineering-at).
 
 kontakt@ai-engineering.at — Eisenstadt, Austria
 
@@ -47,6 +57,8 @@ kontakt@ai-engineering.at — Eisenstadt, Austria
 - 🌍 Website: [ai-engineering.at](https://www.ai-engineering.at)
 - 📚 Wiki: [wiki.ai-engineering.at](https://wiki.ai-engineering.at)
 - 🧩 Hub: [hub.ai-engineering.at](https://hub.ai-engineering.at)
+- 🔐 Verify: [verify.ai-engineering.at](https://verify.ai-engineering.at)
+- 💬 MM: [mm.ai-engineering.at](https://mm.ai-engineering.at)
 - 🎬 YouTube: [@AI-Engineering-at](https://www.youtube.com/@AI-Engineering-at)
 - 💼 LinkedIn: [joerg-fuchs-ai](https://www.linkedin.com/in/joerg-fuchs-ai)
 - 👤 Maintainer: [@LEEI1337](https://github.com/LEEI1337)
