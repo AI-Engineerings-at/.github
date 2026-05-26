@@ -41,3 +41,12 @@ We test and maintain forks of the best open-source AI tools — integrated into 
 Founded by Joerg Fuchs — mechatronics engineer, 13 Anthropic certifications, NVIDIA Developer.
 
 kontakt@ai-engineering.at — Eisenstadt, Austria
+
+## Connect
+
+- 🌍 Website: [ai-engineering.at](https://www.ai-engineering.at)
+- 📚 Wiki: [wiki.ai-engineering.at](https://wiki.ai-engineering.at)
+- 🧩 Hub: [hub.ai-engineering.at](https://hub.ai-engineering.at)
+- 🎬 YouTube: [@AI-Engineering-at](https://www.youtube.com/@AI-Engineering-at)
+- 💼 LinkedIn: [joerg-fuchs-ai](https://www.linkedin.com/in/joerg-fuchs-ai)
+- 👤 Maintainer: [@LEEI1337](https://github.com/LEEI1337)
