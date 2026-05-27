@@ -1,0 +1,7 @@
+{
+  "name": "AIE Bauteil CI",
+  "description": "Standard CI für AIE-Bauteile mit ruff/black/bandit/pytest (Python 3.11+3.12 Matrix, least-privilege)",
+  "iconName": "python",
+  "categories": ["Python", "AIE"],
+  "filePatterns": ["pyproject.toml$", "requirements.*\\.txt$", "setup\\.py$"]
+}

@@ -1,0 +1,113 @@
+---
+# AIE-Bauteil CI - Org-weite Default-Vorlage
+# Standard-CI für AIE-Bauteile (AI Engineering at)
+# Tools: ruff (lint) + black (format) + bandit (security) + pytest (tests)
+# Python 3.11 + 3.12 Matrix, least-privilege Permissions
+
+name: AIE Bauteil CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+# Least-privilege: read-only default; jobs erhalten nur was sie brauchen
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint (ruff + black)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install lint tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff black
+
+      - name: Ruff check
+        run: ruff check .
+
+      - name: Black format check
+        run: black --check .
+
+  security:
+    name: Security (bandit)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install bandit
+        run: |
+          python -m pip install --upgrade pip
+          pip install bandit[toml]
+
+      - name: Bandit scan
+        run: bandit -r . -ll -x ./tests,./test
+
+  test:
+    name: Test (pytest, Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
+          if [ -f pyproject.toml ]; then pip install -e ".[dev]" || pip install -e . || true; fi
+          pip install pytest pytest-cov
+
+      - name: Run pytest
+        run: |
+          if [ -d tests ] || [ -d test ]; then
+            pytest --cov --cov-report=term-missing -q
+          else
+            echo "Keine tests/ oder test/ Verzeichnisse - skip"
+          fi
